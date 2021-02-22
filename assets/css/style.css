@@ -30,3 +30,7 @@
   width: 10vh;
   height: 10vh;
 }
+
+.item:hover{
+  box-shadow: 10px 5px 5px red;
+}
