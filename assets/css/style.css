@@ -2,6 +2,7 @@ body{
     width: 100%;
     margin: 0px;
     padding: 0px;
+    background-color: black;
 }
 
 .nav {
@@ -11,7 +12,7 @@ body{
 }
 
 .sgauche {
-    /* box-sizing: border-box; */
+    min-width: 100px;
     width: 10vw;
     background-color: antiquewhite;
     display: flex;
@@ -20,39 +21,34 @@ body{
     align-self: flex-start;
     position: relative; 
 }
-
+.item{
+  min-width: 100px;
+  width: 10vw;
+  height: 10vw;
+}
 .item1 {
     background-color: orange;
-    width: 10vw;
-    height: 10vw;
 }
-
 .item2 {
-    background-color: blue;
-    width: 10vw;
-    height: 10vw;
+    background-color: blue;   
 }
-
 .item3 {
-    background-color: chartreuse;
-    width: 10vw;
-    height: 10vw;
+    background-color: chartreuse;   
 }
-
 .item:hover {
     box-shadow: 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%), 0 11px 15px -7px rgb(0 0 0 / 20%);
     z-index: 99;
 }
-
 .centralPanel{
     background-color: beige;
-    width: auto;
-    height: 100%;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-    position: relative;
+    position: absolute;
+    top: 10vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .card{
     background-color: chartreuse;
@@ -61,12 +57,32 @@ body{
     margin: 5px;
 }
 .allCards{
-    border: grey 1px solid;
-    width: 90vw ;
+    width: 90vw;
+    height: 90vh;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.allCards::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 700px){
+
+.centralPanel{
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.sgauche{
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
 }
