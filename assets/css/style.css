@@ -37,6 +37,7 @@ body {
   width: var(--menu-item-width);
   height: var(--menu-item-height);
 }
+
 .menu-item1 {
   background-color: orange;
 }
@@ -49,6 +50,8 @@ body {
 .menu-item:hover {
   box-shadow: var(--box-hover-shadow);
   z-index: 99;
+  transform: scale(1.05, 1.05);
+  border-radius: 2px;
 }
 
 .allCards {
@@ -63,7 +66,19 @@ body {
   overflow-y: auto;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  padding: 12px;
 }
+.allCards:hover .card:not(:hover) {
+  transform: scale(0.9, 0.9);
+  transition: 1s;
+  /* align-content: flex-start; 
+    transition: 1s;  */
+}
+/* .allCards:hover .card{
+    /* margin: 12px; */
+/* transition: 1s; */
+/* transform: scale(1.5, 1.5) */
+/* transform: scale(0.9, 0.9); */
 
 /*
 Pour utiliser une variable définie auparavant et récupérer sa valeur, il suffit de suivre la syntaxe
@@ -75,6 +90,9 @@ var(--nom-de-la-variable)
   height: var(--card-size);
   margin: var(--card-margin);
 }
+/* .card:hover {
+    transform: scale(1.2, 1.2)!important;
+} */
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .allCards::-webkit-scrollbar {
