@@ -24,7 +24,7 @@ Un nom de variable en CSS3 doit commencer par "--"
   --cards-container-height: 90vh;
 
   /* Card variables */
-  --card-size: 250px;
+  --card-size: 80px;
   --card-margin: 24px;
 
   /* Shadows */
