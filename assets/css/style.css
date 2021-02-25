@@ -109,6 +109,43 @@ var(--nom-de-la-variable)
   position: absolute;
 }
 
+.cercle3 {
+  background-color: chartreuse;
+  width: var(--card-size);
+  height: var(--card-size);
+  border-radius: 50%;
+  animation: animeCercle1 3s infinite;
+  z-index: 10;
+  position: absolute;
+}
+
+.cercle4 {
+  background-color: chartreuse;
+  width: var(--card-size);
+  height: var(--card-size);
+  border-radius: 50%;
+  animation: animeCercle2 3s infinite;
+  z-index: 5;
+  position: absolute;
+}
+.rectangle3 {
+  background-color: chartreuse;
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  animation: animeRectangle1 3s infinite;
+  z-index: 2;
+  position: absolute;
+}
+.rectangle4 {
+  background-color: chartreuse;
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  animation: animeRectangle2 3s infinite;
+  z-index: 2;
+  position: absolute;
+}
 @keyframes animeCercle1 {
   0% {
       transform: translate(0px,0px);
@@ -189,7 +226,87 @@ var(--nom-de-la-variable)
 
 
 }
+/*2eme partie*/
 
+@keyframes animeCercle3 {
+  0% {
+      transform: translate(0px,0px);
+  }
+
+  33% {
+      transform: translate(0px,100px);
+  }
+
+  66% {
+      transform: translate(0px,0px);
+  }
+
+  100% {
+      transform: translate(100px,0px);
+  }
+
+}
+@keyframes animeRectangle3 {
+  0% {
+      height: var(--card-size);
+      width: 0px;
+  }
+
+  33% {
+    height: var(--card-size);
+    width: 200px;
+  }
+
+  66% {
+    height: var(--card-size);
+    width: 0px;
+  }
+
+  100% {
+    height: 200px;
+    width: var(--card-size);
+  }
+
+}
+  
+@keyframes animeRectangle4 {
+  0% {
+      height: 0px;
+      width: var(--card-size);
+  }
+
+  66% {
+    height: 0px;
+    width: var(--card-size);
+  }
+
+  100% {
+    height: 200px;
+    width: var(--card-size);
+  }
+
+}
+
+
+@keyframes animeCercle4 {
+  0% {
+      transform: translate(0px,0px);
+  }
+
+  33% {
+      transform: translate(0px,-100px);
+  }
+
+  66% {
+      transform: translate(0px,0px);
+  }
+
+  100% {
+      transform: translate(-100px,0px);
+  }
+
+
+}
 /* Hide scrollbar for Chrome, Safari and Opera */
 .allCards::-webkit-scrollbar {
   display: none;
