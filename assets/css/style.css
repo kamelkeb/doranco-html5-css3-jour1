@@ -108,6 +108,24 @@ var(--nom-de-la-variable)
   z-index: 2;
   position: absolute;
 }
+.plus {
+  background-color: chartreuse;
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  animation: animePlusX,animePlusY 3s infinite;
+  z-index: auto;
+  position: absolute;
+}
+.plusY {
+  background-color: chartreuse;
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  animation: animePlusY 3s infinite;
+  z-index: auto;
+  position: absolute;
+}
 
 @keyframes animeCercle1 {
   0% {
@@ -187,6 +205,45 @@ var(--nom-de-la-variable)
       transform: translate(0px,-100px);
   }
 
+
+}
+@keyframes animePlusX {
+  0% {
+    height: var(--card-size);
+    width: 0px;
+}
+
+33% {
+  height: var(--card-size);
+  width: 200px;
+}
+
+66% {
+  height: var(--card-size);
+  width: 0px;
+}
+
+100% {
+  height: 200px;
+  width: var(--card-size);
+}
+
+}
+@keyframes animePlusY {
+  0% {
+      height: 0px;
+      width: var(--card-size);
+  }
+
+  66% {
+    height: 0px;
+    width: var(--card-size);
+  }
+
+  100% {
+    height: 200px;
+    width: var(--card-size);
+  }
 
 }
 
