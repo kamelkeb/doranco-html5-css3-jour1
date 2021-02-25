@@ -77,7 +77,6 @@ var(--nom-de-la-variable)
   height: var(--card-size);
   border-radius: 50%;
   animation: animeCercle1 3s infinite;
-  z-index: 10;
   position: absolute;
 }
 
@@ -86,8 +85,7 @@ var(--nom-de-la-variable)
   width: var(--card-size);
   height: var(--card-size);
   border-radius: 50%;
-  /* animation: animeCercle2 3s infinite; */
-  z-index: 5;
+  animation: animeCercle2 3s infinite;
   position: absolute;
 }
 .cercle3 {
@@ -95,8 +93,7 @@ var(--nom-de-la-variable)
   width: var(--card-size);
   height: var(--card-size);
   border-radius: 50%;
-  /* animation: animeCercle3 3s infinite; */
-  z-index: 5;
+  animation: animeCercle3 3s infinite;
   position: absolute;
 }
 .cercle4 {
@@ -104,8 +101,7 @@ var(--nom-de-la-variable)
   width: var(--card-size);
   height: var(--card-size);
   border-radius: 50%;
-  /* animation: animeCercle4 3s infinite; */
-  z-index: 5;
+  animation: animeCercle4 3s infinite;
   position: absolute;
 }
 .rectangle1 {
@@ -113,8 +109,7 @@ var(--nom-de-la-variable)
   width: 0;
   height: 0;
   border-radius: 0;
-  /*  animation: animeRectangle1 3s infinite; */
-  z-index: 2;
+  animation: animeRectangle1 3s infinite;
   position: absolute;
 }
 .rectangle2 {
@@ -122,8 +117,7 @@ var(--nom-de-la-variable)
   width: 0;
   height: 0;
   border-radius: 0;
-  /*  animation: animeRectangle2 3s infinite; */
-  z-index: 2;
+  /* animation: animeRectangle2 3s infinite;*/
   position: absolute;
 }
 
