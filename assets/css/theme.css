@@ -1,0 +1,33 @@
+/*
+Définition de variables en CSS3
+Une notion de portée intervient, si la variable est définie sous un sélecteur donné, elle sera
+accessible seulement dans cette portée.
+Un nom de variable en CSS3 doit commencer par "--"
+*/
+:root {
+  /* Header variables */
+  --header-height: 10vh;
+  --header-background-color: rgb(34, 10, 121);
+
+  /* Menu variables */
+  --menu-min-width: 100px;
+  --menu-default-width: 10vw;
+  --menu-background-color: antiquewhite;
+
+  /* Meni Item variables */
+  --menu-item-min-width: 100px;
+  --menu-item-width: 10vw;
+  --menu-item-height: 10vh;
+
+  /* Cards Container variables */
+  --cards-container-width: 90vw;
+  --cards-container-height: 90vh;
+
+  /* Card variables */
+  --card-size: 80px;
+  --card-margin: 24px;
+
+  /* Shadows */
+  --box-hover-shadow: 0 24px 38px 3px rgb(0 0 0 / 14%),
+    0 9px 46px 8px rgb(0 0 0 / 12%), 0 11px 15px -7px rgb(0 0 0 / 20%);
+}
