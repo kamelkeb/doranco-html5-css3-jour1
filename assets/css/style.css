@@ -108,6 +108,25 @@ var(--nom-de-la-variable)
   z-index: 2;
   position: absolute;
 }
+.cercle3 {
+  background-color: chartreuse;
+  width: var(--card-size);
+  height: var(--card-size);
+  border-radius: 50%;
+  animation: animeCercle3 2s linear infinite;
+  z-index: 4;
+  position: absolute;
+}
+.cercle4 {
+  background-color: chartreuse;
+  width: var(--card-size);
+  height: var(--card-size);
+  border-radius: 50%;
+  animation: animeCercle4 2s linear infinite;
+  z-index: 4;
+  position: absolute;
+}
+
 
 @keyframes animeCercle1 {
   0% {
@@ -189,6 +208,54 @@ var(--nom-de-la-variable)
 
 
 }
+@keyframes animeCercle3 {
+  0% {
+    transform: translate(0px,0px);
+  }
+  
+  20% {
+    transform: translate(100px,0px);
+  }
+  
+  40% {
+    transform: translateY(40px);
+  }
+  
+  60% {
+    transform: translate(0px,0px);
+  }
+  80% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translate(0px,100px);
+  }
+}
+
+@keyframes animeCercle4 {
+  0% {
+    transform: translate(0px,0px);
+}
+
+20% {
+    transform: translate(-100px,0px);
+}
+40% {
+    transform: translateX(-40px);
+}
+60% {
+    transform: translate(0px,0px);
+}
+80% {
+    transform: translateX(40px);
+}
+
+100% {
+    transform: translate(0px,-100px);
+}
+}
+
+  
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .allCards::-webkit-scrollbar {
